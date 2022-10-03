@@ -1,0 +1,204 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mon site</title>
+  <meta content="" name="description">
+  <link href="css/main.css" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      creme: '#e1dfb6',
+                      marron: '#5c452d',
+                      light_shrek: '#c5ee7d',
+                      medium_shrek: '#8cb04e',
+                      shrek: '#7a9244'
+                  },
+                  fontFamily: {
+                      shrek: ["shrek", "cursive"],
+                  },
+
+              }
+          }
+      }
+  </script>
+</head>
+
+<body>
+<nav class="
+  relative
+  w-full
+  flex flex-wrap
+  py-4
+  bg-creme
+  hover:text-gray-700
+  focus:text-gray-700
+  shadow-lg
+  navbar navbar-expand-lg navbar-light
+  ">
+  <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+    <button class="
+      navbar-toggler
+      text-shrek
+      border-0
+      hover:shadow-none hover:no-underline
+      py-2
+      px-2.5
+      bg-transparent
+      focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline
+    " data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+      <svg aria-hidden="true" class="w-6" data-icon="bars" data-prefix="fas"
+           focusable="false" role="img" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+              fill="currentColor">
+        </path>
+      </svg>
+    </button>
+    <a class="text-xl text-shrek font-shrek" href="#">Shrek</a>
+    <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
+
+      <!-- Left links -->
+      <ul class="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
+        <li class="nav-item px-2">
+          <a aria-current="page" class='text-marron' class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item pr-2">
+          <a class="nav-link text-marron hover:text-gray-700 focus:text-gray-700 p-0" href="#">Questionnqire</a>
+        </li>
+        <li class="nav-item pr-2">
+          <a class="nav-link text-marron hover:text-gray-700 focus:text-gray-700 p-0" href="#">Pricing</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section>
+  <div class="background-image p-12 text-center relative overflow-hidden bg-no-repeat bg-cover rounded-lg">
+    <div
+            class="banner-effect absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+    >
+      <div class="flex justify-center items-center h-full">
+        <div class="text-white">
+          <h2 class="font-shrek text-4xl mb-4">Wiki Shrek</h2>
+          <h4 class="font-shrek text-xl mb-6">La page des fans de Shrek</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Jumbotron -->
+</section>
+
+<section>
+  <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+    <!--Card 1-->
+    <div class="rounded-xl h-50 overflow-hidden shadow-lg">
+      <img alt="Mountain" class="h-3/4 w-full object-cover object-center"
+           src="https://www.francetvinfo.fr/pictures/zwzFc6PU5JuzL2NA0BwMqhCrvo0/1200x900/2016/08/23/shrek-5.jpg">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 font-shrek text-shrek">Shrek</div>
+        <p class="text-marron text-base">
+          He’s an Ogre, who used to live alone and in solitude, however, his life and himself changed after he met his
+          friend Donkey as well as other people along the way.
+        </p>
+      </div>
+    </div>
+
+    <div class="rounded-xl h-50 overflow-hidden shadow-lg">
+      <img alt="Mountain" class="h-3/4 w-full object-cover object-center"
+           src="https://static.wikia.nocookie.net/shrek/images/6/61/Shrek3-disneyscreencaps.com-2156.jpg/revision/latest?cb=20200923230043">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 font-shrek text-shrek">Fiona</div>
+        <p class="text-marron text-base">
+          Princess Fiona is the wife of Shrek, the daughter of Queen Lillian and King Harold, a close friend of
+          Donkey, and the mother of the Ogre triplets in the Shrek franchise.
+        </p>
+      </div>
+    </div>
+
+    <div class="rounded-xl h-50 overflow-hidden shadow-lg">
+      <img alt="Mountain" class="h-3/4 w-full object-cover object-center"
+           src="https://pbs.twimg.com/media/FR39lKPWYAAKvuq.jpg">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 font-shrek text-shrek">Donkey</div>
+        <p class="text-marron text-base">
+          Donkey is first seen on a leash and muzzled with his owner in a line, where fairy tale creatures are being
+          given to the Duloc Guards for money.
+        </p>
+      </div>
+    </div>
+
+    <div class="rounded-xl h-50 overflow-hidden shadow-lg">
+      <img alt="Mountain" class="h-3/4 w-full object-cover object-center"
+           src="https://pbs.twimg.com/profile_images/706289299885572096/7mr1Lujv_400x400.jpg">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 font-shrek text-shrek">Lord Farquaad</div>
+        <p class="text-marron text-base">
+          Lord Farquaad was the sole ruler of Duloc and he strives to make everything in his kingdom completely
+          'perfect.
+        </p>
+      </div>
+    </div>
+
+    <div class="rounded-xl h-50 overflow-hidden shadow-lg">
+      <img alt="Mountain" class="h-3/4 w-full object-cover object-center"
+           src="https://static.wikia.nocookie.net/shrek/images/1/17/GreatGreatGrampyDonDon.png/revision/latest?cb=20190720225609">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 font-shrek text-shrek">Great Great Grampy Don Don</div>
+        <p class="text-marron text-base">
+          Great-Great Grampy Don-Don is Donkey's great-great uncle. He was shown in the "Swamp Talk" episode,
+          "Donkey's Awkward Family Photos".
+        </p>
+      </div>
+    </div>
+
+    <div class="rounded-xl h-50 overflow-hidden shadow-lg">
+      <img alt="Mountain" class="h-3/4 w-full object-cover object-left"
+           src="https://static.wikia.nocookie.net/shrek/images/1/19/Dragon_Forever_After_transparent.png/revision/latest?cb=20210624203030">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 font-shrek text-shrek">Dragon</div>
+        <p class="text-marron text-base">
+          Dragon is a green-eyed, red dragon and reccurring character in the Shrek franchise. She is a former
+          antagonist who eventually befriends the main cast.
+        </p>
+      </div>
+    </div>
+
+    <div class="rounded-xl h-50 overflow-hidden shadow-lg">
+      <img alt="Mountain" class="h-3/4 w-full object-cover object-center"
+           src="https://static.wikia.nocookie.net/shrek/images/b/b7/PinocchioTransparent.png/revision/latest?cb=20171219222542">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 font-shrek text-shrek">Pinocchio</div>
+        <p class="text-marron text-base">
+          Pinocchio is a character in the Shrek franchise. He is one of Shrek's best friends and is a wooden puppet
+          who used to dream of becoming a real boy.
+        </p>
+      </div>
+    </div>
+
+    <div class="rounded-xl h-50 overflow-hidden shadow-lg">
+      <img alt="Mountain" class="h-3/4 w-full object-cover object-center"
+           src="https://static.wikia.nocookie.net/shrek/images/3/31/DronkeysTransparent.png/revision/latest?cb=20171219175849">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 font-shrek text-shrek">Dronkeys</div>
+        <p class="text-marron text-base">
+          The Dronkeys are the six known children of Dragon and Donkey, referred to by Donkey as his "little mutant
+          babies". They were briefly introduced at the end of Shrek 2.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+
+</html>
