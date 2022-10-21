@@ -1,0 +1,200 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mon site</title>
+  <meta content="" name="description">
+  <link href="css/main.css" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      creme: '#e1dfb6',
+                      marron: '#5c452d',
+                      light_shrek: '#c5ee7d',
+                      medium_shrek: '#8cb04e',
+                      shrek: '#7a9244'
+                  },
+                  fontFamily: {
+                      shrek: ["shrek", "cursive"],
+                  },
+
+              }
+          }
+      }
+  </script>
+</head>
+
+<body>
+
+<nav class="
+  relative
+  w-full
+  flex flex-wrap
+  py-4
+  bg-creme
+  hover:text-gray-700
+  focus:text-gray-700
+  shadow-lg
+  navbar navbar-expand-lg navbar-light
+  ">
+  <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+    <button class="
+      navbar-toggler
+      text-shrek
+      border-0
+      hover:shadow-none hover:no-underline
+      py-2
+      px-2.5
+      bg-transparent
+      focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline
+    " data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+      <svg aria-hidden="true" class="w-6" data-icon="bars" data-prefix="fas"
+           focusable="false" role="img" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+              fill="currentColor">
+        </path>
+      </svg>
+    </button>
+    <a class="text-xl text-shrek font-shrek" href="./index.html">Shrek</a>
+    <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
+
+      <!-- Left links -->
+      <ul class="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
+        <li class="nav-item px-2">
+          <a aria-current="page" class="nav-link active" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item pr-2">
+          <a class="nav-link text-blue-400 hover:text-gray-700 focus:text-gray-700 p-0" href="./questionnaire.html">Questionnqire</a>
+        </li>
+        <li class="nav-item pr-2">
+          <a class="nav-link text-marron hover:text-gray-700 focus:text-gray-700 p-0" href="#">Pricing</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="flex justify-center">
+  <div class="p-6 rounded-lg shadow-lg bg-creme w-3/4 mt-10">
+    <h1 class="text-xl text-shrek font-shrek">Quelques questions pour vous </h1>
+    <form>
+      <div class="grid grid-cols-1 mt-5 sm:grid-cols-2 sm:gap-4">
+        <div class="form-group mb-6">
+          <input class="form-control
+          block
+          w-full
+          px-3
+          py-1.5
+          bg-clip-padding
+          border border-solid border-gray-300
+          rounded-xl
+          ease-in-out
+          m-0
+          focus:border-light_shrek focus:outline-none" id="firstname"
+                 placeholder="Prenom" type="text">
+        </div>
+        <div class="form-group mb-6">
+          <input class="form-control
+          block
+          w-full
+          px-3
+          py-1.5
+          text-gray-700
+          bg-clip-padding
+          border border-solid border-gray-300
+          rounded-xl
+          focus:bg-white focus:border-light_shrek focus:outline-none" id="lastname"
+                 placeholder="Nom de famille" type="text">
+        </div>
+      </div>
+      <div class="form-group mb-6">
+        <input class="form-control block
+          w-full
+          px-3
+          py-1.5
+          text-gray-700
+          bg-clip-padding
+          border border-solid border-gray-300
+          rounded-xl
+          focus:bg-white focus:border-light_shrek focus:outline-none" id="email"
+               placeholder="Email" type="email">
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class="form-group mb-6">
+          <input class="form-control block
+          w-full
+          px-3
+          py-1.5
+          text-gray-700
+          bg-clip-padding
+          border border-solid border-gray-300
+          rounded-xl" placeholder="Âge" type="number">
+        </div>
+        <div class="form-group mb-6 flex pt-1 justify-center">
+          <input class="form-check-input block
+          px-3
+          text-gray-700
+          bg-clip-padding
+          border border-solid border-gray-300
+          rounded-xl" id="color" placeholder="Couleur préféré" type="color" value="#7a9244">
+          <label class="inline-block text-gray-800 pl-2" for="color">
+            Couleur préféré
+          </label>
+        </div>
+        <div class="form-group mb-6 flex pt-1 justify-center">
+          <input class="form-control block
+
+          px-3
+          text-gray-700
+          bg-clip-padding
+          border border-solid border-gray-300
+          rounded-xl" placeholder="Date de naissance" type="date">
+          <label class="inline-block text-gray-800 pl-2 pt-1" for="color">
+            Date de naissance
+          </label>
+        </div>
+
+      </div>
+
+      <div class="form-group text-center mb-6">
+        <input checked
+               class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
+               id="exampleCheck25" type="checkbox">
+        <label class="form-check-label inline-block text-gray-800" for="exampleCheck25">Subscribe to our
+          newsletter</label>
+      </div>
+      <div class="flex justify-end">
+        <button class="
+      px-6
+      py-2.5
+      bg-shrek
+      text-white
+      font-medium
+      text-xs
+      leading-tight
+      rounded-xl
+      shadow-md
+      hover:text-light_shrek hover:font-shrek
+      hover:bg-marron
+      focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+      active:bg-blue-800 active:shadow-lg
+      transition
+      duration-150
+      ease-in-out" type="submit">Envoyer
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+</body>
