@@ -7,10 +7,8 @@
   <meta content="" name="description">
   <link href="css/main.css" rel="stylesheet">
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-  <link href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com"></script>
+
   <script>
       tailwind.config = {
           theme: {
@@ -34,48 +32,47 @@
 
 <body>
 
-<nav class="
-  relative
-  w-full
-  flex flex-wrap
-  py-4
-  bg-creme
-  hover:text-gray-700
-  focus:text-gray-700
-  shadow-lg
-  navbar navbar-expand-lg navbar-light
-  ">
-  <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
-    <button class="
-      navbar-toggler
-      text-shrek
-      border-0
-      hover:shadow-none hover:no-underline
-      py-2
-      px-2.5
-      bg-transparent
-      focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline
-    " data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
-      <svg aria-hidden="true" class="w-6" data-icon="bars" data-prefix="fas"
-           focusable="false" role="img" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-        <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
-              fill="currentColor">
-        </path>
-      </svg>
-    </button>
-    <a class="text-xl text-shrek font-shrek" href="./index.html">Shrek</a>
-    <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
-
-      <!-- Left links -->
-      <ul class="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
-        <li class="nav-item px-2">
-          <a aria-current="page" class="nav-link active" href="./index.html">Home</a>
+<nav class="bg-creme px-2 sm:px-4 py-2.5 w-full z-20 top-0 left-0 border-b border-gray-200">
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+    <a class="flex items-center" href="index.html">
+      <img alt="Flowbite Logo" class="mr-3 h-6 sm:h-9" src="img/logo.svg">
+      <span class="self-center text-xl font-shrek text-shrek whitespace-nowrap">Shrek Wiki</span>
+    </a>
+    <div class="flex md:order-2">
+      <a href="https://shrek.fandom.com/wiki/Shrek_(character)"><button class="text-light_shrek bg-marron hover:font-extrabold focus:ring-4 focus:outline-none focus:ring-shrek font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+                                                                        type="button">
+        Wiki Officiel
+      </button></a>
+      <button aria-controls="navbar-sticky" aria-expanded="false"
+              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              data-collapse-toggle="navbar-sticky" type="button">
+        <span class="sr-only">Open main menu</span>
+        <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+             xmlns="http://www.w3.org/2000/svg">
+          <path clip-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                fill-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
+        <li>
+          <a aria-current="page"
+             class="block py-2 pr-4 pl-3 text-marron rounded md:hover:text-medium_shrek md:p-0"
+             href="index.html">Home</a>
         </li>
-        <li class="nav-item pr-2">
-          <a class="nav-link text-blue-400 hover:text-gray-700 focus:text-gray-700 p-0" href="./questionnaire.html">Questionnqire</a>
+        <li>
+          <a class="block py-2 pr-4 pl-3 text-shrek font-bold rounded hover:text-medium_shrek md:p-0"
+             href="#">Questionnaire</a>
         </li>
-        <li class="nav-item pr-2">
-          <a class="nav-link text-marron hover:text-gray-700 focus:text-gray-700 p-0" href="#">Pricing</a>
+        <li>
+          <a class="block py-2 pr-4 pl-3 text-marron rounded md:hover:text-medium_shrek md:p-0"
+             href="#">Services</a>
+        </li>
+        <li>
+          <a class="block py-2 pr-4 pl-3 text-marron rounded md:hover:text-medium_shrek md:p-0"
+             href="#">Contact</a>
         </li>
       </ul>
     </div>
