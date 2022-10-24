@@ -65,7 +65,7 @@
         </li>
         <li>
           <a class="block py-2 pr-4 pl-3 text-marron rounded md:hover:text-medium_shrek md:p-0"
-             href="questionnaire.html">Questionnaire</a>
+             href="questionnaire.html">Ajout de personnage</a>
         </li>
         <li>
           <a class="block py-2 pr-4 pl-3 text-marron rounded md:hover:text-medium_shrek md:p-0"
@@ -95,9 +95,31 @@
 </section>
 
 <section>
-  <div id='allCards' class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
+  <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-5"
+       id='allCards'></div>
 </section>
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+
+<footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6">
+    <span class="text-sm text-gray-500 sm:text-center">© 2022 <a class="hover:underline"
+                                                                                    href="https://flowbite.com/">Shrek™</a>. Tout droit réservé.
+    </span>
+  <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 sm:mt-0">
+    <li>
+      <a class="mr-4 hover:underline md:mr-6 " href="index.html">Home</a>
+    </li>
+    <li>
+      <a class="mr-4 hover:underline md:mr-6" href="questionnaire.html">Ajout de personnage</a>
+    </li>
+    <li>
+      <a class="mr-4 hover:underline md:mr-6" href="gallery.html">Galerie</a>
+    </li>
+    <li>
+      <a class="hover:underline" href="table.html">Personnages</a>
+    </li>
+  </ul>
+</footer>
+
 </body>
 </html>
 
@@ -137,11 +159,11 @@
         doc.classList = 'rounded-xl card-up h-50 overflow-hidden shadow-lg'
         let allCards = document.querySelector('#allCards')
 
-        doc.innerHTML ='<img alt = "Mountain" class = "h-2/5 w-full object-cover object-center" src = '+x["img"]+' >' +
+        doc.innerHTML = '<img alt = "Mountain" class = "h-2/3 w-full object-cover object-center" src = ' + x["img"] + ' >' +
             '            <div class = "px-6 py-4" >' +
-            '             <div class = "font-bold text-xl mb-2 font-shrek text-shrek"> '+x["name"]+' </div>\n' +
+            '             <div class = "font-bold text-xl mb-2 font-shrek text-shrek"> ' + x["name"] + ' </div>\n' +
             '        <p class="text-marron text-base">\n' +
-            '            '+x["description"]+'' +
+            '            ' + x["description"] + '' +
             '        </p>\n' +
             '    </div>'
 
