@@ -23,13 +23,13 @@
                   fontFamily: {
                       shrek: ["shrek", "cursive"],
                   },
+
               }
           }
       }
   </script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 </head>
+
 <body>
 
 <nav class="bg-creme px-2 sm:px-4 py-2.5 w-full z-20 top-0 left-0 border-b border-gray-200">
@@ -41,7 +41,7 @@
     <div class="flex md:order-2">
       <a href="https://shrek.fandom.com/wiki/Shrek_(character)">
         <button class="text-light_shrek bg-marron hover:font-extrabold focus:ring-4 focus:outline-none focus:ring-shrek font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
-                type="submit">
+                type="button">
           Wiki Officiel
         </button>
       </a>
@@ -66,44 +66,54 @@
         </li>
         <li>
           <a class="block py-2 pr-4 pl-3 text-marron rounded md:hover:text-medium_shrek md:p-0"
-             href="questionnaire.html">Questionnaire</a>
-        </li>
-        <li>
-          <a class="block py-2 pr-4 pl-3 text-shrek font-bold rounded hover:text-medium_shrek md:p-0"
-             href="#">Galerie</a>
+             href="#">Questionnaire</a>
         </li>
         <li>
           <a class="block py-2 pr-4 pl-3 text-marron rounded md:hover:text-medium_shrek md:p-0"
+             href="gallery.html">Galerie</a>
+        </li>
+        <li>
+          <a class="block py-2 pr-4 pl-3 text-shrek font-bold rounded hover:text-medium_shrek md:p-0"
              href="table.html">Personnages</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<div class="flex space-x-2 justify-center mt-5">
-  <input class="form-control
-          block
-          w-1/4
-          px-3
-          py-1.5
-          bg-clip-padding
-          border border-solid border-gray-300
-          rounded-xl
-          ease-in-out
-          m-0
-          focus:border-light_shrek focus:outline-none" id="link"
-         placeholder="exemple : https://monImage.jpg" type="text">
-  <button class="inline-block px-6 py-2.5 bg-shrek text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-marron hover:shadow-lg  transition duration-150 ease-in-out"
-          id='buttoned'
-          type="button">
-    Ajoute ta photo
-  </button>
-</div>
-<section class="overflow-hidden text-gray-700 ">
-  <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
-    <div class="flex flex-wrap -m-1 md:-m-2" id="gallery"></div>
+
+<div class="flex justify-center">
+  <div class="p-6 rounded-lg shadow-lg bg-creme w-3/4 mt-10">
+    <h1 class="text-xl text-shrek font-shrek">Ajoute ton personnage </h1>
+    <table class="w-full text-sm text-left text-gray-500">
+      <thead class="text-xs text-light_shrek uppercase bg-marron">
+      <tr>
+        <th class="py-3 px-6" scope="col">
+          Nom
+        </th>
+        <th class="py-3 px-6" scope="col">
+          Age
+        </th>
+        <th class="py-3 px-6" scope="col">
+          Race
+        </th>
+        <th class="py-3 px-6" scope="col">
+          Couleur
+        </th>
+        <th class="py-3 px-6" scope="col">
+          Sexe
+        </th>
+        <th class="py-3 px-6" scope="col">
+          Naissance
+        </th>
+        <th class="py-3 px-6" scope="col">
+          Méchant ?
+        </th>
+      </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
   </div>
-</section>
+</div>
 </body>
 
 <script type="module">
@@ -130,57 +140,47 @@
     const db = getFirestore(app);
 
     // Get a list of cities from your database
-    export async function getCities(db) {
-        const shrek = collection(db, 'shrek');
-        let resShrek = await getDocs(shrek);
+    export async function getCards(db) {
+        const cards = collection(db, 'cards');
+        let resShrek = await getDocs(cards);
         return resShrek.docs.map(doc => doc.data());
     }
 
-    function addDiv(link) {
-        let doc = document.createElement('div')
-        doc.id = 'imgs'
-        doc.classList = 'flex-wrap w-1/3'
-        let gallery = document.querySelector('#gallery')
-        doc.innerHTML =
-            '          <div class="w-full h-80 p-1 md:p-2">\n' +
-            '            <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"\n' +
-            '                 src=' + link + '>\n' +
-            '          </div>\n' +
-            '        '
+    function addDiv(x) {
+        console.log(x)
+        let doc = document.createElement('tr')
+        doc.classList = 'bg-white border-b'
+        let allCards = document.querySelector('tbody')
 
-        gallery.appendChild(doc)
+        doc.innerHTML = '' +
+            '        <th class="py-4 px-6 font-medium text-shrek whitespace-nowrap" scope="row">\n' +
+            '          ' + x["name"] +
+            '        </th>\n' +
+            '        <td class="py-4 px-6">\n' +
+            '          ' + x["old"] +
+            '        </td>\n' +
+            '        <td class="py-4 px-6">\n' +
+            '          ' + x["race"] + ' \n' +
+            '        </td>\n' +
+            '        <td class="py-4 px-6">\n' +
+            '          ' + x["color"] + ' \n' +
+            '        </td>\n' +
+            '        <td class="py-4 px-6">\n' +
+            '          ' + x["sexe"] + ' \n' +
+            '        </td>\n' +
+            '        <td class="py-4 px-6">\n' +
+            '          ' + x["birth"] + ' \n' +
+            '        </td>\n' +
+            '        <td class="py-4 px-6">\n' +
+            '          ' + x["mechant"] + ' \n' +
+            '        </td>\n'
+
+        allCards.appendChild(doc)
     }
 
-    async function sendPicture() {
-        let link = document.querySelector('#link').value
-        if (link == '') {
-            alert('L\' url est vide')
-            return
-        }
-        try {
-            const docRef = await addDoc(collection(db, "shrek"), {
-                shrek: link,
-            });
-            console.log("Document envoyé: ", docRef.id);
-        } catch (e) {
-            console.error("Error : ", e);
-        }
-    }
+    let cards = await getCards(db);
 
-    let cities = await getCities(db);
-
-    cities.forEach(x => {
-        addDiv(x['shrek'])
-    })
-
-    document.querySelector('#buttoned').addEventListener('click', sendPicture)
-
-    let divImg = document.querySelectorAll('#imgs')
-    divImg.forEach(div => {
-        let img = div.querySelector('img')
-        img.onerror = function () {
-            div.remove()
-            return true;
-        }
+    cards.forEach(x => {
+        addDiv(x)
     })
 </script>
