@@ -31,89 +31,91 @@
 </head>
 
 <body>
-
-<nav class="bg-creme px-2 sm:px-4 py-2.5 w-full z-20 top-0 left-0 border-b border-gray-200">
-  <div class="container flex flex-wrap justify-between items-center mx-auto">
-    <a class="flex items-center" href="index.html">
-      <img alt="Flowbite Logo" class="mr-3 h-6 sm:h-9" src="img/logo.svg">
-      <span class="self-center text-xl font-shrek text-shrek whitespace-nowrap">Shrek Wiki</span>
-    </a>
-    <div class="flex md:order-2">
-      <a href="https://shrek.fandom.com/wiki/Shrek_(character)">
-        <button class="text-light_shrek bg-marron hover:font-extrabold focus:ring-4 focus:outline-none focus:ring-shrek font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
-                type="button">
-          Wiki Officiel
-        </button>
+<header>
+  <nav class="bg-creme px-2 sm:px-4 py-2.5 w-full z-20 top-0 left-0 border-b border-gray-200">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+      <a class="flex items-center" href="index.html">
+        <img alt="Flowbite Logo" class="mr-3 h-6 sm:h-9" src="img/logo.svg">
+        <span class="self-center text-xl font-shrek text-shrek whitespace-nowrap">Shrek Wiki</span>
       </a>
-      <button aria-controls="navbar-sticky" aria-expanded="false"
-              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              data-collapse-toggle="navbar-sticky" type="button">
-        <span class="sr-only">Open main menu</span>
-        <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-             xmlns="http://www.w3.org/2000/svg">
-          <path clip-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                fill-rule="evenodd"></path>
-        </svg>
-      </button>
+      <div class="flex md:order-2">
+        <a href="https://shrek.fandom.com/wiki/Shrek_(character)">
+          <button class="text-light_shrek bg-marron hover:font-extrabold focus:ring-4 focus:outline-none focus:ring-shrek font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+                  type="button">
+            Wiki Officiel
+          </button>
+        </a>
+        <button aria-controls="navbar-sticky" aria-expanded="false"
+                class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                data-collapse-toggle="navbar-sticky" type="button">
+          <span class="sr-only">Open main menu</span>
+          <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+               xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  fill-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul class="flex flex-col p-4 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
+          <li>
+            <a aria-current="page"
+               class="block py-2 pr-4 pl-3 text-marron rounded md:hover:text-medium_shrek md:p-0"
+               href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="block py-2 pr-4 pl-3 text-marron rounded md:hover:text-medium_shrek md:p-0"
+               href="#">Ajout de personnage</a>
+          </li>
+          <li>
+            <a class="block py-2 pr-4 pl-3 text-marron rounded md:hover:text-medium_shrek md:p-0"
+               href="gallery.html">Galerie</a>
+          </li>
+          <li>
+            <a class="block py-2 pr-4 pl-3 text-shrek font-bold rounded hover:text-medium_shrek md:p-0"
+               href="table.html">Personnages</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-      <ul class="flex flex-col p-4 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
-        <li>
-          <a aria-current="page"
-             class="block py-2 pr-4 pl-3 text-marron rounded md:hover:text-medium_shrek md:p-0"
-             href="index.html">Home</a>
-        </li>
-        <li>
-          <a class="block py-2 pr-4 pl-3 text-marron rounded md:hover:text-medium_shrek md:p-0"
-             href="#">Ajout de personnage</a>
-        </li>
-        <li>
-          <a class="block py-2 pr-4 pl-3 text-marron rounded md:hover:text-medium_shrek md:p-0"
-             href="gallery.html">Galerie</a>
-        </li>
-        <li>
-          <a class="block py-2 pr-4 pl-3 text-shrek font-bold rounded hover:text-medium_shrek md:p-0"
-             href="table.html">Personnages</a>
-        </li>
-      </ul>
+  </nav>
+</header>
+<section class="mb-5">
+  <div class="flex justify-center">
+    <div class="p-6 rounded-lg shadow-lg bg-creme w-3/4 mt-10">
+      <h1 class="text-xl text-shrek font-shrek">Ajoute ton personnage </h1>
+      <table class="w-full text-sm text-left text-gray-500">
+        <thead class="text-xs text-light_shrek uppercase bg-marron">
+        <tr>
+          <th class="py-3 px-6" scope="col">
+            Nom
+          </th>
+          <th class="py-3 px-6" scope="col">
+            Age
+          </th>
+          <th class="py-3 px-6" scope="col">
+            Race
+          </th>
+          <th class="py-3 px-6" scope="col">
+            Couleur
+          </th>
+          <th class="py-3 px-6" scope="col">
+            Sexe
+          </th>
+          <th class="py-3 px-6" scope="col">
+            Naissance
+          </th>
+          <th class="py-3 px-6" scope="col">
+            Méchant ?
+          </th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </div>
   </div>
-</nav>
-
-<div class="flex justify-center">
-  <div class="p-6 rounded-lg shadow-lg bg-creme w-3/4 mt-10">
-    <h1 class="text-xl text-shrek font-shrek">Ajoute ton personnage </h1>
-    <table class="w-full text-sm text-left text-gray-500">
-      <thead class="text-xs text-light_shrek uppercase bg-marron">
-      <tr>
-        <th class="py-3 px-6" scope="col">
-          Nom
-        </th>
-        <th class="py-3 px-6" scope="col">
-          Age
-        </th>
-        <th class="py-3 px-6" scope="col">
-          Race
-        </th>
-        <th class="py-3 px-6" scope="col">
-          Couleur
-        </th>
-        <th class="py-3 px-6" scope="col">
-          Sexe
-        </th>
-        <th class="py-3 px-6" scope="col">
-          Naissance
-        </th>
-        <th class="py-3 px-6" scope="col">
-          Méchant ?
-        </th>
-      </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </div>
-</div>
+</section>
 <footer class="p-4 bg-creme rounded-lg shadow md:flex md:items-center md:justify-between md:p-6">
     <span class="text-sm text-marron sm:text-center">© 2022 <a class="hover:underline text-medium_shrek"
                                                                href="https://flowbite.com/">Shrek™</a>. Tout droit réservé.

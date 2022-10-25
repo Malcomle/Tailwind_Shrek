@@ -31,63 +31,64 @@
 </head>
 
 <body>
-
-<nav class="bg-creme px-2 sm:px-4 py-2.5 w-full z-20 top-0 left-0 border-b border-gray-200">
-  <div class="container flex flex-wrap justify-between items-center mx-auto">
-    <a class="flex items-center" href="index.html">
-      <img alt="Flowbite Logo" class="mr-3 h-6 sm:h-9" src="img/logo.svg">
-      <span class="self-center text-xl font-shrek text-shrek whitespace-nowrap">Shrek Wiki</span>
-    </a>
-    <div class="flex md:order-2">
-      <a href="https://shrek.fandom.com/wiki/Shrek_(character)">
-        <button class="text-light_shrek bg-marron hover:font-extrabold focus:ring-4 focus:outline-none focus:ring-shrek font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
-                type="button">
-          Wiki Officiel
-        </button>
+<header>
+  <nav class="bg-creme px-2 sm:px-4 py-2.5 w-full z-20 top-0 left-0 border-b border-gray-200">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+      <a class="flex items-center" href="index.html">
+        <img alt="Flowbite Logo" class="mr-3 h-6 sm:h-9" src="img/logo.svg">
+        <span class="self-center text-xl font-shrek text-shrek whitespace-nowrap">Shrek Wiki</span>
       </a>
-      <button aria-controls="navbar-sticky" aria-expanded="false"
-              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              data-collapse-toggle="navbar-sticky" type="button">
-        <span class="sr-only">Open main menu</span>
-        <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-             xmlns="http://www.w3.org/2000/svg">
-          <path clip-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                fill-rule="evenodd"></path>
-        </svg>
-      </button>
+      <div class="flex md:order-2">
+        <a href="https://shrek.fandom.com/wiki/Shrek_(character)">
+          <button class="text-light_shrek bg-marron hover:font-extrabold focus:ring-4 focus:outline-none focus:ring-shrek font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+                  type="button">
+            Wiki Officiel
+          </button>
+        </a>
+        <button aria-controls="navbar-sticky" aria-expanded="false"
+                class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                data-collapse-toggle="navbar-sticky" type="button">
+          <span class="sr-only">Open main menu</span>
+          <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+               xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  fill-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul class="flex flex-col p-4 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
+          <li>
+            <a aria-current="page"
+               class="block py-2 pr-4 pl-3 text-marron rounded md:hover:text-medium_shrek md:p-0"
+               href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="block py-2 pr-4 pl-3 text-shrek font-bold rounded hover:text-medium_shrek md:p-0"
+               href="#">Ajout de personnage</a>
+          </li>
+          <li>
+            <a class="block py-2 pr-4 pl-3 text-marron rounded md:hover:text-medium_shrek md:p-0"
+               href="gallery.html">Galerie</a>
+          </li>
+          <li>
+            <a class="block py-2 pr-4 pl-3 text-marron rounded md:hover:text-medium_shrek md:p-0"
+               href="table.html">Personnages</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-      <ul class="flex flex-col p-4 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
-        <li>
-          <a aria-current="page"
-             class="block py-2 pr-4 pl-3 text-marron rounded md:hover:text-medium_shrek md:p-0"
-             href="index.html">Home</a>
-        </li>
-        <li>
-          <a class="block py-2 pr-4 pl-3 text-shrek font-bold rounded hover:text-medium_shrek md:p-0"
-             href="#">Ajout de personnage</a>
-        </li>
-        <li>
-          <a class="block py-2 pr-4 pl-3 text-marron rounded md:hover:text-medium_shrek md:p-0"
-             href="gallery.html">Galerie</a>
-        </li>
-        <li>
-          <a class="block py-2 pr-4 pl-3 text-marron rounded md:hover:text-medium_shrek md:p-0"
-             href="table.html">Personnages</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="flex justify-center">
-  <div class="p-6 rounded-lg shadow-lg bg-creme w-3/4 mt-10">
-    <h1 class="text-xl text-shrek font-shrek">Ajoute ton personnage </h1>
-    <form id="card">
-      <div class="grid grid-cols-1 mt-5 sm:grid-cols-2 sm:gap-4">
-        <div class="form-group mb-6">
-          <input class="form-control
+  </nav>
+</header>
+<section class="mb-10">
+  <div class="flex justify-center">
+    <div class="p-6 rounded-lg shadow-lg bg-creme w-3/4 mt-10">
+      <h1 class="text-xl text-shrek font-shrek">Ajoute ton personnage </h1>
+      <form id="card">
+        <div class="grid grid-cols-1 mt-5 sm:grid-cols-2 sm:gap-4">
+          <div class="form-group mb-6">
+            <input class="form-control
           block
           w-full
           px-3
@@ -98,10 +99,10 @@
           ease-in-out
           m-0
           focus:border-light_shrek focus:outline-none" id="firstname"
-                 placeholder="Prenom" type="text">
-        </div>
-        <div class="form-group mb-6">
-          <input class="form-control
+                   placeholder="Prenom" type="text">
+          </div>
+          <div class="form-group mb-6">
+            <input class="form-control
           required
           block
           w-full
@@ -112,24 +113,24 @@
           border border-solid border-gray-300
           rounded-xl
           focus:bg-white focus:border-light_shrek focus:outline-none" id="lastname"
-                 placeholder="Nom de famille" type="text">
+                   placeholder="Nom de famille" type="text">
+          </div>
         </div>
-      </div>
-      <div class="form-group mb-6">
-        <select class="bg-gray-50 border border-gray-300 text-gray-900 font-shrek text-sm rounded-lg focus:ring-shrek focus:border-shrek block w-full p-2.5"
-                id="races">
-          <option selected value="">Choisissez votre race</option>
-          <option value="Humain">Humain</option>
-          <option value="Ogre">Ogre</option>
-          <option value="Animal">Animal</option>
-          <option value="Monstre">Monstre</option>
-          <option value="Dragon">Dragon</option>
-        </select>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <div class="form-group mb-6">
-          <input class="form-control block
+          <select class="bg-gray-50 border border-gray-300 text-gray-900 font-shrek text-sm rounded-lg focus:ring-shrek focus:border-shrek block w-full p-2.5"
+                  id="races">
+            <option selected value="">Choisissez votre race</option>
+            <option value="Humain">Humain</option>
+            <option value="Ogre">Ogre</option>
+            <option value="Animal">Animal</option>
+            <option value="Monstre">Monstre</option>
+            <option value="Dragon">Dragon</option>
+          </select>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div class="form-group mb-6">
+            <input class="form-control block
           w-full
           px-3
           py-1.5
@@ -137,60 +138,61 @@
           bg-clip-padding
           border border-solid border-gray-300
           rounded-xl" id="old" placeholder="Âge" type="number">
-        </div>
-        <div class="form-group mb-6 flex pt-1 justify-center">
-          <input class="form-check-input block
+          </div>
+          <div class="form-group mb-6 flex pt-1 justify-center">
+            <input class="form-check-input block
           px-3
           text-gray-700
           bg-clip-padding
           border border-solid border-gray-300
           rounded-xl" id="color" placeholder="Couleur préféré" type="color" value="#7a9244">
-          <label class="inline-block text-gray-800 pl-2" for="color">
-            Couleur préféré
-          </label>
-        </div>
-        <div class="form-group mb-6 flex pt-1 justify-center">
-          <input class="form-control block
+            <label class="inline-block text-gray-800 pl-2" for="color">
+              Couleur préféré
+            </label>
+          </div>
+          <div class="form-group mb-6 flex pt-1 justify-center">
+            <input class="form-control block
           px-3
           text-gray-700
           bg-clip-padding
           border border-solid border-gray-300
           rounded-xl" id="birth" placeholder="Date de naissance" type="date">
-          <label class="inline-block text-gray-800 pl-2 pt-1" for="color">
-            Date de naissance
-          </label>
+            <label class="inline-block text-gray-800 pl-2 pt-1" for="color">
+              Date de naissance
+            </label>
+          </div>
         </div>
-      </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
-        <div class="form-group mb-6 flex pt-1 justify-center">
-          <ul class="items-center w-full text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 sm:flex">
-            <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r">
-              <div class="flex items-center pl-3">
-                <input checked class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500" id="sexeH"
-                       name="list-radio" type="radio"
-                       value="">
-                <label class="py-3 ml-2 w-full text-sm font-medium text-gray-900 " for="sexeH">Homme</label>
-              </div>
-            </li>
-            <li class="w-full dark:border-gray-600">
-              <div class="flex items-center pl-3">
-                <input class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500" id="sexeF"
-                       name="list-radio" type="radio"
-                       value="">
-                <label class="py-3 ml-2 w-full text-sm font-medium text-gray-900" for="sexeF">Femme</label>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="form-group text-center mb-6 mt-3">
-          <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-shrek checked:border-marron focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
-                 id="vilain" type="checkbox">
-          <label class="form-check-label inline-block text-gray-800" for="vilain">Est-il un vilain ?</label>
-        </div>
-        <div class="form-group mb-6">
-          <input class="form-control
+          <div class="form-group mb-6 flex pt-1 justify-center">
+            <ul class="items-center w-full text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 sm:flex">
+              <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r">
+                <div class="flex items-center pl-3">
+                  <input checked class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"
+                         id="sexeH"
+                         name="list-radio" type="radio"
+                         value="">
+                  <label class="py-3 ml-2 w-full text-sm font-medium text-gray-900 " for="sexeH">Homme</label>
+                </div>
+              </li>
+              <li class="w-full dark:border-gray-600">
+                <div class="flex items-center pl-3">
+                  <input class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500" id="sexeF"
+                         name="list-radio" type="radio"
+                         value="">
+                  <label class="py-3 ml-2 w-full text-sm font-medium text-gray-900" for="sexeF">Femme</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="form-group text-center mb-6 mt-3">
+            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-shrek checked:border-marron focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
+                   id="vilain" type="checkbox">
+            <label class="form-check-label inline-block text-gray-800" for="vilain">Est-il un vilain ?</label>
+          </div>
+          <div class="form-group mb-6">
+            <input class="form-control
           block
           w-full
           px-3
@@ -201,15 +203,17 @@
           ease-in-out
           m-0
           focus:border-light_shrek focus:outline-none" id="img"
-                 placeholder="Inserez l'url de l'image de votre personnage" type="text">
+                   placeholder="Inserez l'url de l'image de votre personnage" type="text">
+          </div>
         </div>
-      </div>
-      <textarea class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-xl border border-gray-300 focus:ring-marron focus:border-shrek " id="description" maxlength="175"
+        <textarea
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-xl border border-gray-300 focus:ring-marron focus:border-shrek "
+                id="description" maxlength="175"
                 placeholder="Description de votre personnage"
                 rows="4"></textarea>
 
-      <div class="flex justify-end">
-        <button class="
+        <div class="flex justify-end">
+          <button class="
       px-6
       py-2.5
       bg-shrek
@@ -226,11 +230,13 @@
       transition
       duration-150
       ease-in-out" id="button" type="button">Envoyer
-        </button>
-      </div>
-    </form>
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
-</div>
+</section>
+
 <footer class="p-4 bg-creme rounded-lg shadow md:flex md:items-center md:justify-between md:p-6">
     <span class="text-sm text-marron sm:text-center">© 2022 <a class="hover:underline text-medium_shrek"
                                                                href="https://flowbite.com/">Shrek™</a>. Tout droit réservé.
