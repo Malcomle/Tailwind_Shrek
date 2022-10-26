@@ -180,6 +180,9 @@
         let sexe = x["sexe"] === true ? 'Masculin' : 'Feminin'
         let mechant = x["mechant"] === true ? 'Oui' : 'Non'
 
+        let date = new Date(x['birth'])
+        date = date.toLocaleDateString("fr")
+
         doc.innerHTML = '' +
             '        <th class="py-4 px-6 font-medium text-shrek whitespace-nowrap" scope="row">\n' +
             '          ' + x["name"] +
@@ -196,7 +199,7 @@
             '          ' + sexe + ' \n' +
             '        </td>\n' +
             '        <td class="py-4 px-6 text-marron">\n' +
-            '          ' + x["birth"] + ' \n' +
+            '          ' + date + ' \n' +
             '        </td>\n' +
             '        <td class="py-4 px-6 text-marron">\n' +
             '          ' + mechant + ' \n' +

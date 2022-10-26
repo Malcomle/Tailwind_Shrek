@@ -11,10 +11,21 @@
 }
 
 .background-image{
-    background-image: url('https://100filmsinayear.files.wordpress.com/2018/04/shrek-banner.jpg?w=1000&h=288&crop=1');
-    height: 400px;
+    background-image: url('https://www.underscores.fr/wp-content/uploads/2010/08/Shrek-1-Banner.jpg');
+
+
+    /* Set a specific height */
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .banner-effect{
     background-color: rgba(0, 0, 0, 0.6)
+
 }
+
