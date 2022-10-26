@@ -10,6 +10,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
 
+
   <script>
       tailwind.config = {
           theme: {
@@ -176,6 +177,9 @@
         doc.classList = 'bg-white border-b'
         let allCards = document.querySelector('tbody')
 
+        let sexe = x["sexe"] === true ? 'Masculin' : 'Feminin'
+        let mechant = x["mechant"] === true ? 'Oui' : 'Non'
+
         doc.innerHTML = '' +
             '        <th class="py-4 px-6 font-medium text-shrek whitespace-nowrap" scope="row">\n' +
             '          ' + x["name"] +
@@ -186,18 +190,19 @@
             '        <td class="py-4 px-6">\n' +
             '          ' + x["race"] + ' \n' +
             '        </td>\n' +
-            '        <td class="py-4 px-6">\n' +
-            '          ' + x["color"] + ' \n' +
+            '        <td id="color" class="py-4 px-6">\n' +
             '        </td>\n' +
             '        <td class="py-4 px-6">\n' +
-            '          ' + x["sexe"] + ' \n' +
+            '          ' + sexe + ' \n' +
             '        </td>\n' +
             '        <td class="py-4 px-6">\n' +
             '          ' + x["birth"] + ' \n' +
             '        </td>\n' +
             '        <td class="py-4 px-6">\n' +
-            '          ' + x["mechant"] + ' \n' +
+            '          ' + mechant + ' \n' +
             '        </td>\n'
+
+        doc.querySelector('#color').classList = "py-4 px-6 bg-["+x['color']+"]"
 
         allCards.appendChild(doc)
     }
